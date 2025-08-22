@@ -1,0 +1,25 @@
+--Q 1. Get all columns from the tables Customers, Orders and Suppliers
+
+SELECT * FROM Customers;
+SELECT * FROM Orders;
+SELECT * FROM Suppliers;
+
+--Q 2. Get all Customers alphabetically, by Country and name
+
+
+--Q 3. Get all Orders by date
+SELECT * 
+FROM Orders
+ORDER BY OrderDate ASC;
+
+SELECT CustomerID,OrderID,OrderDate
+FROM Orders
+ORDER BY OrderDate ASC;
+
+--Q 4. Get the count of all Orders made during 1997
+
+SELECT COUNT(*) AS OrderCount
+FROM Orders
+WHERE OrderDate = 1997;
+
+
